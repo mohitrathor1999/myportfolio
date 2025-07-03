@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="image/icon-1.png" />
+    <link rel="stylesheet" href="css//style.css" />
+    <link rel="stylesheet" href="css//respoinsiv.css" />
+    <link rel="stylesheet" href="css//loding.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="container-fluid">
+        <header id="header">
+          <nav>
+            <div class="logo">
+              <h3>Port<span>folio</span></h3>
+              <div class="btn">
+                <div class="btn-1">
+                  <span></span>
+                  <span style="margin: 9px 0px" id="hide"></span>
+                  <span></span>
+                </div>
+                <div class="btn-2">
+                  <span></span>
+                  <span style="margin: 9px 0px" id="hide"></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <ul>
+              <li><a href="#home" onclick="hideMenu()">Home</a></li>
+              <li><a href="#about" onclick="hideMenu()">About</a></li>
+              <li><a href="#service" onclick="hideMenu()">Service</a></li>
+              <li><a href="#skill" onclick="hideMenu()">Skill</a></li>
+              <li><a href="#project" onclick="hideMenu()">Project</a></li>
+              <li><a href="#contact" onclick="hideMenu()">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <!-- ----  this is a ((home)) section    ----- -->
+        <!-- ----  this is a ((home)) section    ----- -->
+        <section id="home">
+          <div class="home-row">
+            <div class="home-col col-1">
+              <span> I'm FrontEnd Developer</span>
+              <h1>
+                Hello<br />
+                I' am <span id="typed"></span>
+              </h1>
+              <p>
+                I'm a frontend developer who builds fast, responsive, and clean web apps with a focus on user experience. Skilled in HTML, CSS, JavaScript, React, and Tailwind. I also work with Redux Toolkit for state management and handle API integrations smoothly. Whether it’s a simple UI or a dynamic web app, I focus on writing clean, maintainable code that just works.
+              </p>
+
+              <ul>
+                <li>
+                  <a href="https://www.linkedin.com/in/mohit-rathor-b78b6b17b"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="home-col col-2">
+              <div class="image">
+                <img src="image//DISPLAYPICTURE.jpeg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ------- this is a ((About)) section start ------- -->
+        <!-- ------- this is a ((About)) section start ------- -->
+
+        <section
+          id="about"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          <h2>About</h2>
+          <div class="about-col">
+            <h3>
+            Clean Code. Sharp Design. Real Impact.
+            </h3>
+          </div>
+          <div class="about-row">
+            <div
+              class="about-col-2"
+              data-aos="fade-right"
+              data-aos-offset="100"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              <p>
+               I'm a frontend developer who loves building clean, responsive UIs with React, Tailwind, and JavaScript. I use Redux Toolkit for smooth state management and handle APIs with ease. I focus on writing simple, efficient code that feels good to use and works great across devices.
+              </p>
+            </div>
+            <div
+              class="about-col-3"
+              data-aos="fade-left"
+              data-aos-offset="100"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              <div class="my-details">
+                <p>
+                  <strong>NAME : </strong>Mohit<br />
+                  <strong>CITY : </strong>New Delhi<br />
+                  <strong>INTEREST : </strong>Mobile Games<br />
+                  <strong>Phone : </strong>91 7303594544
+                  <br />
+                  <strong>Email : </strong>mohitjs.420@gmail.com
+                </p>
+              </div>
+              <!-- <div class="my-cv">
+                            <a href="image/cv.pdf" download>DOWNLOAD CV</a>
+                        </div> -->
+            </div>
+          </div>
+        </section>
+
+        <!-- ------- this is a ((service)) section start ------- -->
+        <!-- ------- this is a ((service)) section start ------- -->
+        <section
+          id="service"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          <h2>Service</h2>
+          <div class="service-row">
+            <div
+              class="col-service"
+              data-aos="fade-right"
+              data-aos-offset="100"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              <i class="fab fa-html5"></i><br />
+              <span>Html 5</span>
+              <p>Hyper Text Markup Language</p>
+            </div>
+
+            <div
+              class="col-service"
+              data-aos="fade-up"
+              data-aos-offset="100"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              <i class="fab fa-css3-alt"></i><br />
+              <span>CSS 3</span>
+              <p>Cascading Style Sheets</p>
+            </div>
+
+            <div
+              class="col-service"
+              data-aos="fade-left"
+              data-aos-offset="100"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              <i class="fab fa-css3-alt"></i><br />
+              <span>Media Query</span>
+              <p>Media query is a create to responsive web page</p>
+            </div>
+            <div
+              class="col-service"
+              data-aos="fade-left"
+              data-aos-offset="100"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              <i class="fab fa-css3-alt"></i><br />
+              <span>Bootstrap5</span>
+              <p>Bootstrap 5 is a Css library.</p>
+            </div>
+
+            <div
+              class="col-service"
+              data-aos="fade-up"
+              data-aos-offset="100"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              <i class="fab fa-js"></i><br />
+              <span>JavaScript</span>
+              <p>JavaScript is the programming language of the Web.</p>
+            </div>
+
+            <div
+              class="col-service"
+              data-aos="fade-left"
+              data-aos-offset="100"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              <i class="fab fa-js"></i><br />
+              <span>JQuery</span>
+              <p>
+                JQuery is a lightweight, "write less, do more", JavaScript
+                library.
+              </p>#0d6efd
+            </div>
+            <div
+              class="col-service"
+              data-aos="fade-left"
+              data-aos-offset="100"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              <i class="fab fa-react"></i><br />
+              <span>ReactJS</span>
+              <p>React is a JavaScript library for building user interfaces.</p>
+            </div>
+            <div
+              class="col-service"
+              data-aos="fade-left"
+              data-aos-offset="100"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              <i class="fab fa-node-js"></i><br />
+              <span>NodeJS</span>
+              <p>
+                Node.js is a JavaScript runtime built on Chrome's V8 JavaScript
+                engine.
+              </p>
+            </div>
+            <div
+              class="col-service"
+              data-aos="fade-left"
+              data-aos-offset="100"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              <i class="fab fa-gitlab"></i><br />
+              <span>GitLab</span>
+              <p>GitLab is a web-based DevOps lifecycle tool.</p>
+            </div>
+            
+            <div
+              class="col-service"
+              data-aos="fade-left"
+              data-aos-offset="100"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              <i class="fab fa-github"></i><br />
+              <span>GitHub</span>
+              <p>
+                GitHub is a code hosting platform for version control and
+                collaboration.
+              </p>
+            </div>
+            <div
+            class="col-service"
+            data-aos="fade-left"
+            data-aos-offset="100"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            <i class="fa-brands fa-wordpress"></i><br />
+            <span>WordPress</span>
+            <p>
+              "WordPress: Versatile, user-friendly, powerful, customizable, popular, scalable, secure."
+            </p>
+          </div>
+            <i ></i>
+          </div>
+        </section>
+
+        <!-- this is as ((project)) section start  -->
+        <!-- this is as ((project)) section start  -->
+
+        <!-- <section
+          id="project"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          data-aos-once="true"
+        >
+          <div class="project-details">
+            <h2>Project</h2>
+            <div class="projct-row">
+              <div
+                class="project-col"
+                data-aos="fade-right"
+                data-aos-offset="150"
+                data-aos-duration="1000"
+                data-aos-once="true"
+              >
+                <a href="project//my web/index.html" target="_blank"
+                  ><img src="project/project-image/project-2.png" alt=""
+                /></a>
+              </div>
+              <div
+                class="project-col"
+                data-aos="fade-up"
+                data-aos-offset="150"
+                data-aos-duration="1000"
+                data-aos-once="true"
+              >
+                <a href="project/Portfolio/index.html" target="_blank"
+                  ><img src="project/project-image/project-3.png" alt=""
+                /></a>
+              </div>
+              <div
+                class="project-col"
+                data-aos="fade-left"
+                data-aos-offset="150"
+                data-aos-duration="1000"
+                data-aos-once="true"
+              >
+                <a href="project//web template/index.html" target="_blank"
+                  ><img src="project/project-image/project-4.png" alt=""
+                /></a>
+              </div>
+              <div
+                class="project-col"
+                data-aos="fade-right"
+                data-aos-offset="150"
+                data-aos-duration="1000"
+                data-aos-once="true"
+              >
+                <a href="project/lbsti/index.html" target="_blank"
+                  ><img src="project/project-image/project-5.png" alt=""
+                /></a>
+              </div>
+              <div
+                class="project-col"
+                data-aos="fade-up"
+                data-aos-offset="150"
+                data-aos-duration="1000"
+                data-aos-once="true"
+              >
+                <a href="project//Hakaji/hakaji.html" target="_blank"
+                  ><img src="project/project-image/project-6.png" alt=""
+                /></a>
+              </div>
+              <div
+                class="project-col"
+                data-aos="fade-left"
+                data-aos-offset="150"
+                data-aos-duration="1000"
+                data-aos-once="true"
+              >
+                <a href="project/gallery/index.html" target="_blank"
+                  ><img src="project/project-image/project-1.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </section> -->
+
+        <!-- ------- this is a ((contact)) section start ------- -->
+        <!-- ------- this is a ((contact)) section start ------- -->
+
+        <section
+          id="contact"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          <h2>Contact</h2>
+          <div class="section-rows">
+            <div class="contact-row">
+              <div
+                class="contact"
+                data-aos="fade-right"
+                data-aos-offset="50"
+                data-aos-duration="1000"
+                data-aos-once="true"
+              >
+                <ul class="con-link">
+                  <li>
+                    Address : <br /><a href=""
+                      ><i class="fa-solid fa-house"></i> A-123 Andheria More
+                      chattarpur</a
+                    >
+                  </li>
+                  <li>
+                    Phone : <br /><a href="tel:7303594544"
+                      ><i class="fa-solid fa-phone"></i> 7303594544</a
+                    >
+                  </li>
+                  <li>
+                    Email : <br /><a href="mailto:rathormohit547@gmail.com"
+                      ><i class="fa-solid fa-envelope"></i>
+                      mohitjs.420@gmail.com</a
+                    >
+                  </li>
+                </ul>
+                <ul class="social-link">
+                  <li>
+                    <a href="https://www.linkedin.com/in/mohit-rathor-b78b6b17b"
+                      ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+        <footer>COPYRIGHT© 2025 PORTFOLIO</footer>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+    <script src="js/jquery-3.6.3.js"></script>
+    <script src="js//script.js"></script>
+  </body>
+</html>

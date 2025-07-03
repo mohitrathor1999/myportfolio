@@ -1,0 +1,1182 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+   --min-width:1366px; 
+   --color:#5f84ff;
+   --heading:#252525;
+}
+@font-face{
+    src: url('../font/link.ttf');
+    font-family:nav_link;
+}
+body{
+    min-height:100vh;
+    font-family:nav_link;
+}
+.fixed{
+    width: 159px;
+    height:50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: rotate(270deg);
+    padding: 0px 15px;
+    background-color: rgb(90, 188, 178); 
+    z-index: 8888;
+}
+.fixed > small{
+    color: #ffff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.fixed > p{
+    font-size: 23px;
+    color: #ffff;
+    font-weight: 600;
+    margin-left: 35px;
+    transform: rotate(90deg);
+}
+
+    /*-----header section-----*/
+header{
+    min-width:var(--max-width);
+    height: 80px;
+    margin:0px auto;
+    background-color:whitesmoke;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+header > nav{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: space-between;
+    padding:0px 40px;
+    align-items: center;
+}
+header > nav > .logo img{
+    width: 190px;
+    z-index: 888;
+}
+header > nav > ul{
+    list-style: none;
+    display: flex;
+    column-gap: 40px;
+    z-index: 777;
+}
+header > nav > ul > li > a{
+    color:black;
+    text-decoration:none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.2s;
+    font-family: nav_link;
+}
+header > nav > ul > li > a:hover{
+    color:var(--color);
+}
+
+header > nav > #menu{
+    width:40px;
+    position: absolute;
+    top:calc(50% - 20px);
+    right:4%;
+    cursor: pointer;
+    display:none;
+}
+
+header > nav > #menu span{
+    padding:4px;
+    background-color: #5f84ff;
+    margin:3px 0px;
+    display: block;
+}
+header > nav > #hide_menu{
+    width:30px;
+    position: absolute;
+    top:calc(50% - -3px);
+    right:4%;
+    cursor: pointer;
+    display:none;
+    
+}
+header > nav > #hide_menu span{
+    padding:2px;
+    background-color: #5f84ff;
+    margin:3px 0px;
+    display: block;
+}
+
+
+
+
+    /* main section */
+main{
+    max-width:var(--max-width);
+    height: auto;
+    display: block;
+    margin: 0px auto;
+}
+main > .layout{
+    width:100%;
+    min-height:500px;
+    background-color: #f6f7fb;
+    padding: 50px 0px;
+}
+main > .layout > .layout_rows{
+    width: 94%;
+    height:auto;
+    margin:0px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+main > .layout > .layout_rows > .col-1{
+    width:45%;
+    margin-top: 100px
+}
+main > .layout > .layout_rows > .col-2{
+    width:55%;
+    position: relative;
+    text-align: center;
+}
+main > .layout > .layout_rows > .col-2 > .back{
+    width: 79%;
+    height: 476px;
+    background-color: var(--color);
+    position: relative;
+    border-radius: 17%;
+    transform: rotateZ(35deg);
+    left: 7%;
+    top: 14%;
+   
+}
+main > .layout > .layout_rows > .col-1 > h5{
+    margin: 10px 0px;
+    font-size: 15px;
+    color: rgba(0,0,0,0.2);
+    font-weight: 100;
+}
+main > .layout > .layout_rows > .col-1 > h1{
+    font-size: 38px;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    color: #252525;
+}
+main > .layout > .layout_rows > .col-1 > h1 > span{
+    color:var(--color);
+}
+main > .layout > .layout_rows > .col-1 > p{
+    color: rgba(0,0,0,0.4);
+    font-size: 16px;
+    margin: 23px 0px;
+    word-spacing: 5px;
+}
+.link{
+    text-decoration:none;
+    font-size: 14px;;
+    padding:20px 50px;
+    background-color: var(--color);
+    color:#ffff;
+    border-radius:45px;
+    display:inline-block;
+    margin:15px 0px;
+    text-align:center;
+}
+main > .layout > .layout_rows > .col-2 > .mob-1{
+    width: 80%;
+   
+}
+main > .layout > .layout_rows > .col-2 > .team_image{
+    position: absolute;
+    right: 0;
+    bottom: 26px;
+    width: 33%;
+    text-align: center;
+    border-radius:20px ;
+    background: #ffff;
+    min-height: 110px;
+    animation: abc 2s infinite linear alternate;
+    padding:15px 0px;
+}
+
+
+@keyframes abc{
+    form{
+        bottom: 26px; 
+    }
+    to{
+        bottom: 0;
+    }
+}
+main > .layout > .layout_rows > .col-2 > .team_image > h4{
+    padding: 0px 0px 10px;
+    font-size: 14px;
+}
+main > .layout > .layout_rows > .col-2 > .team_image img{
+    width:80%;
+    height:80px
+}
+
+
+   /* service section */
+   .service{
+    max-width:var(--max-width);
+    height:auto;
+    background-color: ghostwhite;
+    padding: 100px 0px 70px;
+}
+
+.service > h2{
+    width: 46%;
+    color:var(--heading);
+    font-size: 35px;
+    margin: 0px auto;
+    text-align: center;
+    word-spacing: 7px;;
+}
+.service > h2 > span{
+    color:var(--color);
+}
+.service > .service-row{
+    width:100%;
+    display:grid;
+    position: relative;
+    grid-template-columns: 27% 27% 27%;
+    justify-content: space-around;
+    padding: 40px 0px;
+
+}
+.service > .service-row > .service-card{
+    background-color: rgb(355,355,355);
+    border-radius: 26px;
+    box-shadow: 7px 7px 55px 0 #f2f3f6;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.service > .service-row > .service-card::after{
+    content: '';
+    width:100%;
+    height:100%;
+    position: absolute;
+    display: block;
+    bottom:-100%;
+    left:0;
+    background-color: #456df4;
+    transition: all 0.4s;
+    z-index: -1;
+}
+.service > .service-row > .service-card:hover::after{
+    width:100%;
+    bottom:0;
+}
+.service > .service-row > .service-card > a{
+    display: block;
+    padding:20px 20px 70px;
+    text-decoration: none;
+}
+.service > .service-row > .service-card > a > .card-icon{
+    width:18%;
+    transition: all 0.4s;
+}
+.service > .service-row > .service-card > a:hover h3{
+    color:rgba(355,355,355,0.9);
+}
+.service > .service-row > .service-card > a:hover p{
+    color:rgba(355,355,355,0.9);
+}
+
+ 
+
+.service > .service-row > .service-card > a > .card-icon > img{
+    width:100%;
+}
+.service > .service-row > .service-card > a > h3{
+    color:rgba(0,0,0,0.7);
+    margin:15px 0px;
+    transition: all 0.4s;
+}
+.service > .service-row > .service-card > a > p{
+    color:rgba(0,0,0,0.7);
+    margin: 15px 0px;
+    transition: all 0.4s;
+}
+
+
+            /*        Next section     */
+
+.build{
+    max-width:var(--max-width);
+    height:auto;
+    display:block;
+}
+.build > .row{
+    width:93%;
+    height:auto;
+    margin:0px auto;
+    padding:10px;
+    display: flex;
+}
+
+.build > .row > .col{
+    width:50%;
+}
+.build > .row > .col-1 > .img-1{
+    width:100%;
+}
+.build > .row > .col-1 > .img-1 > img{
+    width:100%;
+}
+
+.col-content{
+    width:78%;
+    height:100%;
+    margin:0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.col-content > h2{
+    font-size: 34px;
+    font-weight: 800;
+    font-family: sans-serif;
+    margin: 30px 0px;
+    letter-spacing: 1px;
+    color: #080808;
+}
+
+.col-content > p{
+    color: rgba(0,0,0,0.6);
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+}
+
+
+.dugital{
+    max-width:var(--max-width);
+    min-height:600px;
+    display:block;
+    background-color:#5e5dff;
+    margin: 80px 0px;
+}
+.dugital > .d-row{
+    width:93%;
+    height:100%;
+    margin:0px auto;
+    display: flex;
+    align-items: center;
+}
+.dugital > .d-row > .d-col-1{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+.dugital > .d-row > .d-col{
+    width: 90%;
+    height:70%;
+}
+.dugital > .d-row > .d-col-1 {
+    width: 100%;
+    height:100%;
+    text-align: center;
+}
+.dugital > .d-row > .d-col-1 > img {
+    width: 100%;
+    height:100%;
+}
+.dugital > .d-row > .d-col-2{
+    position: relative;
+    width:90%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+.dugital > .d-row > .d-col-2 > .d-2{
+    position: absolute;
+    top: -150px;
+    right: 0;
+    width: 18%;
+}
+
+.dugital > .d-row > .d-col-2 > h2{
+    font-size: 34px;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin: 30px 0px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.dugital > .d-row > .d-col-2 > .d-3{
+   width:35%;
+}
+.dugital > .d-row > .d-col-2 > p{
+    color: rgba(355,355,355,0.9);
+    letter-spacing: 1px;
+    margin: 23px 0px;
+}
+
+.web-conrent{
+    max-width: var(--max-width);
+    min-height: 90vh;
+    background-image: url(../image//min.svg);
+    background-position: 100% 0px;
+    background-repeat: no-repeat;
+    padding: 70px 5% 0;
+    background-size: 72%;
+    display:flex;
+    flex-direction:row;
+}
+.web-conrent > .web-content-col-1{
+    width:50%;
+    height:100%;
+    margin-top:20px;
+}
+
+.web-conrent > .web-content-col-1 > h2{
+    font-size: 35px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+.web-conrent > .web-content-col-1 > p{
+    margin: 16px 0px;
+    font-size: 15px;
+    word-spacing: 3px;
+    line-height: 1.8;;
+    word-spacing: 5px;
+}
+
+.web-conrent > .web-content-col-2{
+    width:100%;
+    height:100%;
+}
+.web-conrent > .web-content-col-2 > .web-card{
+    width:100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.web-content-col-2 .web-card .card{
+    width:40%;
+    min-height: 410px;
+    padding:50px 30px;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px 0px #ebebeb;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.web-content-col-2 .web-card .card::after{
+    content:'';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:100%;
+    left:0;
+    background-color: #456df4;
+    transition: all 0.6s;
+    z-index: -1;
+}
+
+.web-content-col-2 .web-card .card:hover::after{
+    color:#fff !important;
+    top:0;
+}
+
+    /* car-detals-and-style */
+          /* car-detals-and-style */
+.web-content-col-2 .card-1{
+    height: auto;
+    position: relative;
+    top: 32px;
+    left: 0;
+}
+.web-content-col-2 .card-2{
+    height:auto;
+    position: relative;
+    top:0;
+    right: 0;
+}.web-content-col-2 .card-3{
+    height:auto;
+    position: relative;
+    left: 0;
+    top: 75px;
+}.web-content-col-2 .card-4{
+    height:auto;
+    position: relative;
+    right: 0;
+    top: 45px;
+}
+        /* car-detals-and-style */
+                /* car-detals-and-style */
+
+.web-content-col-2 .web-card .card .web-image{
+    width:90px;
+    height:100px;
+    position: relative;
+    overflow: hidden;
+    transition-property: all;
+    transition-duration: 0.3s !important;
+    transition-delay: 0.2s;
+}
+
+.web-content-col-2 .web-card .card:hover .web-image{
+   height:0px;
+}
+.web-content-col-2 .web-card .card .web-image > img{
+    width:80%;
+    position: absolute;
+    top:0;
+    transition-property: all;
+    transition-duration: 0.3s;
+
+}
+.web-content-col-2 .web-card .card:hover{
+    color:#fff;
+}
+.web-content-col-2 .web-card .card:hover .web-image > img{
+   top: 100%;
+}
+.web-content-col-2 .web-card .card h3{
+    font-size: 21px;
+    margin: 16px 0px;
+    transition: all 0.3s;
+}
+.web-content-col-2 .web-card .card p{
+    transition: all 0.3s;
+}
+        /* review  section //// */
+.revew{
+    min-height: 500px;
+    margin-top: 50px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.revew-card-row{
+    width: 100%;
+    height: auto;
+    display: flex;
+    column-gap: 20px;
+}
+.revew-card{
+    min-height: 450px;
+    width: 25%;
+    padding: 30px;
+    margin-bottom: 100px;
+    background-color: hwb(228deg 96% 2%);
+    border-radius: 10px;
+}
+.revew-card img{
+    width: 50%;
+    padding-top: 20px;
+}
+.revew-card p{
+    font-size: 15px;
+    color: #4a4a4a;
+    word-spacing: 5px;
+    padding-top: 35px;
+}
+.row-animi-1{
+    position: absolute;
+    top:50%;
+    transform: translate(0px, -50%);
+    left:100%;
+    animation: slide1 15s linear infinite reverse;
+}
+@keyframes slide1{
+	0%{
+		left: 0;
+	}
+	49%{
+		left: -100%;
+	}
+	49.001%{
+		left: -100%;
+	}
+	50.002%{
+		left: 100%;
+	}
+	100%{
+		left: 0;
+	}
+}
+
+.row-animi-2{
+    position: absolute;
+    top:50%;
+    transform: translate(0px, -50%);
+    left:102%;
+    animation: slide2 15s linear infinite reverse;
+}
+
+@keyframes slide2{
+	0%{
+		left: 102%;
+	}
+	50%{
+		left: 0%;
+	}
+	99.98%{
+		left: -102%;
+	}
+	99.99%{
+		left: 102%;
+	}
+	100%{
+		left: 102%;
+	}
+}
+
+       /* /////  details  section   /////   */
+
+.deatails{
+    width:100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.de-card{
+    width:33%;
+    height:500px ;
+    color:#141414;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #456df4;
+    background-image:url('../image//b:jfif');
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.de-card::before{
+    content: '';
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: #fff;
+    transition: all 0.4s;
+    z-index: -1;
+}
+.de-card:hover::before{
+    height:0px;
+    top: 0;
+}
+.de-card:hover{
+    color:#ffff;
+}
+.de-card h3{
+    font-size: 28px;
+    margin: 10px 0px;
+}
+.de-card span{
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 4px;
+}
+
+            /* //////    project  section   /////// */
+
+.project{
+    width: 100%;
+    height: 500px;
+    background-color: #5f84ff;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand {
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top:0;
+    left:0;
+    animation: brand 20s linear infinite;
+}
+.brand p{
+    font-size: 50px;
+    font-weight: 900;
+    color: #ffffff47;
+}
+@keyframes brand{
+	0%{
+		left: 0;
+	}
+	50%{
+		left: -100%;
+	}
+	50.001%{
+		left: -100%;
+	}
+	50.002%{
+		left: 100%;
+	}
+	100%{
+		left: 0;
+	}
+}
+.brand-1{
+    left:100%;
+    animation: brand1 20s linear infinite;
+}
+@keyframes brand1{
+	0%{
+		left: 100%;
+	}
+	50%{
+		left: 0%;
+	}
+	99.98%{
+		left: -100%;
+	}
+	99.99%{
+		left: 100%;
+	}
+	100%{
+		left: 100%;
+	}
+}
+
+.project-details h2{
+    font-weight: 800;
+    text-align: center;
+    font-size: 48px;
+    color:#fffcfc;
+}
+.project-details p{
+    width: 58%;
+    text-align: center;
+    margin: 10px auto;
+    line-height: 1.7;
+    font-size: 16px;
+    color:#fffcfc;
+}
+.project a{
+    text-decoration: none;
+    background-image: linear-gradient(to right, #3858c1, #5f84ff);
+    box-shadow: 0px 0px 2px 0px #838282;
+    color: #ffff;
+    padding: 20px 38px;
+    border-radius: 35px;
+    display: block;
+    margin-top: 15px;
+ }
+
+
+ footer{
+    width:100%;
+    height:100%;
+    padding:50px 20px 25px;
+    background-color: #0b1a39
+ }
+
+.footer-fast{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    padding: 30px 40px 50px;
+    justify-content: space-between;
+    border-bottom: 1px solid #535353;
+
+}
+.footer-logo{
+    width:30%;
+    padding:0px 10px;
+}
+.footer-fast img{
+    width:100%;
+}
+.footer-fast span{
+    padding-right:10px;
+    color:#ffff;
+}
+
+.footer-fast .rady a{
+    padding:20px 55px; 
+    color:#ffff;
+    background-color: #456df4;
+    text-decoration: none;
+    border-radius: 35px;
+}
+
+.footer-secound{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top:20px;
+}
+.footer-secound h3{
+    font-size: 20px;
+    color: #456df4;
+    font-weight: 500;
+    margin:10px 0px;
+}
+.footer-secound li{
+    list-style: none;
+    line-height: 2.9;
+}
+
+.footer-secound li a{
+    text-decoration: none;
+    color:#e9e9e9;
+    transition: all 0.4s;
+}
+.footer-secound li a:hover{
+    color: #aeaeae;
+}
+.copy-right{
+    margin-top: 30px;
+    padding: 50px 0px 30px;
+    border-bottom: 1px solid #535353;
+}
+.copy-right a{
+    color:#ffff;
+    padding: 0px 20px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                /* @media (min-width:1180px) and (max-width:1235px) */
+
+@media (min-width:1180px) and (max-width:1235px){
+    header > nav > .logo > img{
+        width:180px;
+    }
+    header > nav > ul li a{
+        font-size: 14px;
+    }
+    .service > h2 {
+        width: 50%;
+    }
+}
+                /* @media (min-width:1080px) and (max-width:1179px) */
+                
+@media (min-width:1080px) and (max-width:1179px){
+    header > nav > .logo > img{
+        width:145px;
+    }
+    header > nav > ul {
+        column-gap: 30px;
+    }
+    .service > h2 {
+        width: 50%;
+        font-size: 32px;
+    }
+}
+
+@media (max-width:1100px){
+    .web-conrent {
+        flex-wrap: wrap;
+    }
+    .web-content-col-2 .web-card .card {
+        width: 37%;
+    }
+}
+
+
+
+                        /* @media (max-width:1079px) */
+
+@media (max-width:1079px){
+    header{
+        height: auto;
+    }
+    header > nav{
+        width:100%;
+        display: block;
+        height:auto;
+        padding:10px 20px;
+    }
+    header > nav > ul{
+        display: block;
+        width:100%;
+        background-color: #5f84ff;
+        text-align: center;
+        position: absolute;
+        left:-100%;
+        transition: all 0.6s;
+    }
+    header > nav > ul li{
+        padding: 10px 0px;
+    }
+    header > nav > #menu{
+        display:block;
+        top: 25%;
+    }
+
+    .service > h2 {
+        width: 51%;
+        font-size: 26px;
+    }
+    .service > .service-row > .service-card > a > p{
+        font-size: 14px;
+    }
+    .revew-card-4{
+        display: none;
+    }
+    .revew-card {
+        min-height: 200px;
+        width: 32%;
+        padding: 56px 20px;
+    }
+}
+                
+                /* @media (min-width:840px) and (max-width:960px) */
+@media (min-width:840px) and (max-width:960px){
+    .service > .service-row {
+        grid-template-columns: 32% 32% 32%;
+    }
+    .col-content > h2 {
+        font-size: 30px;
+    }
+    .dugital > .d-row {
+        flex-direction: column-reverse;
+        padding:40px 0px 0px; 
+    }
+    .dugital > .d-row > .d-col-1 > img {
+        width:75%;
+    }
+    .dugital > .d-row > .d-col-2 > .d-2 {
+        position: absolute;
+        top: -86px;
+        width: 12%;
+        right: 0;
+    }
+    .web-conrent > .web-content-col-2 > .web-card {
+        justify-content: center;
+        column-gap: 20px;
+    }
+    .web-content-col-2 .web-card .card {
+        width: 40%;
+    }
+    .footer-fast .rady a{
+        padding: 15px 45px;
+    }
+}
+                    /* @media (max-width:840px) */
+
+@media (max-width:840px){
+    main > .layout{
+        padding: 10px 0px;
+    }
+    main > .layout > .layout_rows {
+        flex-direction: column-reverse;
+    }
+    main > .layout > .layout_rows > .col-1 {
+        width: 100%;
+        margin-top: 43px;
+    }
+    main > .layout > .layout_rows > .col-1 > h1 {
+        font-size: 40px;
+    }
+    main > .layout > .layout_rows > .col-2 {
+        width: 100%;
+    }
+    main > .layout > .layout_rows > .col-2 > .mob-1 {
+        width: 70%;
+    }
+    .service > .service-row {
+        grid-template-columns: auto;
+        row-gap: 40px;
+    }
+    .service > .service-row > .service-card {
+        width: 90%;
+        margin: 0px auto;
+        padding: 77px 0px;
+    }
+    .service > .service-row > .service-card > a > .card-icon {
+        width: 10%;
+    }
+    .service > .service-row > .service-card > a > p{
+        font-size: 16px;;
+    }
+    .build > .row {
+        width: 93%;flex-direction: column;
+    }
+    .build > .row > .col {
+        width: 100%;
+        margin-top: 64px;
+    }
+    .build > .row > .col-1 > .img-1 {
+        width: 70%;
+        margin: 0px auto;
+    }
+    .dugital > .d-row {
+        flex-direction: column-reverse;
+        padding:40px 0px 0px; 
+    }
+    .dugital > .d-row > .d-col-1 > img{
+        width: 100%;
+        margin-top: 24px;
+    }
+    .dugital > .d-row > .d-col-2 > .d-2 {
+        position: absolute;
+        top: -74px;
+        width: 12%;
+        right: 0;
+    }
+    .dugital > .d-row > .d-col-2 > .d-3 {
+        width: 45%;
+    }
+    .web-content-col-2 .web-card .card {
+        width: 43%;
+    }
+    .revew-card-3{
+        display: none;
+    }
+    .revew-card {
+        min-height: 200px;
+        width: 47%;
+        padding: 56px 20px 126px;
+    }
+    .deatails {
+        gap:40px;
+        margin-bottom: 50px;
+    }
+    .de-card {
+        width: 42%;
+    }
+
+}
+
+                    /* @media (max-width:750px) */
+
+@media (max-width:750px){
+    header > nav > .logo > img{
+        width:170px;
+    }
+    header > nav > #menu{
+        width:30px;
+    }
+    header > nav > #menu > span{
+        padding:3px;
+    }
+    header > nav > ul li{
+        padding: 5px 0px;
+    }
+    .service > h2 {
+        width: 90%;
+        font-size: 24px;
+        margin:0px 0px;
+        padding: 0px 20px;
+        text-align: justify;
+    }
+    .col-content {
+        width: 100%;
+    }
+    .dugital > .d-row > .d-col-2 > .d-2 {
+        position: absolute;
+        top: -74px;
+        width: 15%;
+        right: 0;
+    }
+    .dugital > .d-row > .d-col-2 > .d-3 {
+        width: 50%;
+    }
+    .web-conrent > .web-content-col-1 {
+        width: 90%;
+        margin-bottom: 36px;
+    }
+    .web-conrent > .web-content-col-2 > .web-card {
+        row-gap: 40px;
+    }
+    .web-content-col-2 .card-3 {
+        top:0;
+     }
+     .web-content-col-2 .card-4, .web-content-col-2 .card-1 {
+        top:0;
+     }
+    .web-content-col-2 .web-card .card {
+        width: 76%;
+        margin-bottom: 20px;
+    }
+    .de-card {
+        width: 65%;
+    }
+
+    .project-details h2 {
+        font-size: 40px;
+    }
+    .footer-secound {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-secound ul{
+        width:50%;
+        text-align: center;
+    }
+}
+
+
+
+
+@media (max-width:550px){
+    
+    .dugital > .d-row > .d-col-2 > .d-2 {
+        position: absolute;
+        top: -71px;
+    }
+    .revew-card-2{
+        display: none;
+    }
+    .revew-card {
+        min-height: 200px;
+    width: 94%;
+    padding: 80px 20px 190px;
+
+    }
+    .de-card {
+        width: 90%;
+    }
+}

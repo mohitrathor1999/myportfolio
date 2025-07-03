@@ -1,0 +1,299 @@
+@media (max-width:1204px){
+    header>.header-container>nav>ul>li>a{
+        font-size: 14px;
+    }
+    }
+
+@media (max-width:1146px){
+    header > .header-container{
+        display: block;
+        
+    } 
+    header > .header-container > .logo{
+        height:100%;
+        width:100%;
+        position: relative;
+        z-index: 11;
+    }
+    header > .header-container > .logo > img {
+        width: 27%;
+        height: 92%;
+    }
+    header > .header-container > nav{
+        width: 100%;
+        position: absolute;
+        top: -220%;
+        z-index: 1;
+    }
+   
+    header > .header-container > nav > ul {
+        display: block;
+        text-align: center;
+        padding: 10px 0px;
+    }
+    
+    header > .header-container > nav > ul > li{
+        line-height: 1.7;
+    }
+    header > .header-container > .fa-bars{
+        display: block;
+    }
+}
+@media (max-width:1050px){
+    header > .header-container > .logo > img {
+        width: 29%;
+    height: 100%;
+    }
+}
+@media (max-width:800px){
+    header > .header-container > .logo > img {
+        width: 35%;
+        height: 100%;
+    }
+ }
+ @media (max-width:700px){
+    header > .header-container > .logo > img {
+        width: 40%;
+        height: 100%;
+    }
+ }
+ @media (max-width:600px){
+    header > .header-container > .logo > img {
+        width: 50%;
+        height: 100%;
+    }
+ }
+
+
+
+ /* tripe to uttarakhand section */
+ @media (max-width:1050px){
+    .form {
+        width: 90%;
+    }
+    form{
+        width:100%;
+        justify-content: space-between;
+        row-gap: 30px;
+    }
+    .form select {
+        width: 49%;
+    }
+ }
+ 
+ @media (max-width:700px){
+    .form select {
+        width: 90%;
+    }
+    .form input {
+        width: 45%;
+        height:50px
+    }
+ }
+
+@media (max-width: 1329px){
+    .cover-utt > .cover-pic > .cards-deatile > .card{
+        width: 30%;
+        height: 300px;
+    }
+}
+@media (max-width: 1100px){
+    .cover-utt > .cover-pic{
+        width:100%;
+    }
+}
+
+@media (max-width: 1100px){
+    .cover-utt > .cover-pic > .cards-deatile > .card{
+        width: 40%;
+        height: 329px;
+    }
+}
+@media (max-width: 750px){
+    .cover-utt > .cover-pic > .cards-deatile > .card{
+        width: 60%;
+        height: auto;
+    }
+}
+@media (max-width: 600px){
+    .cover-utt > .cover-pic > .cards-deatile > .card{
+        width: 90%;
+        height: auto;
+    }
+}
+
+
+/* map section  */
+
+@media (max-width: 1260px){
+    .utt-map > .utt-dis > .map-left > .title_map{ 
+        width: 62%;
+    }
+}
+@media (max-width: 1104px){
+    .utt-map > .utt-dis > .map-left > .title_map{ 
+        width: 75%;
+    }
+}
+@media (max-width: 850px){
+    .utt-map > .utt-dis > .map-left > .title_map{ 
+        width: 90%;
+    }
+    .utt-map > .utt-dis >  .utt-map-right > img{
+        width: 95%;
+      }
+}
+@media (max-width: 800px){
+    .utt-map > .utt-dis > .map-left{
+        display: none;
+    }
+    .utt-map > .utt-dis >  .utt-map-right {
+        width: 100%;
+        justify-content: center;
+    }
+    .utt-map > .utt-dis >  .utt-map-right > img{
+        width: 75%;
+      }
+}
+
+
+ /* belog section */
+
+@media (max-width:1180px){
+    .content .con-nontent h3{
+        margin-left: 55px;
+        margin-top: 0px;
+    }
+    .content .con-nontent p{
+        margin-left: 55px;
+    }
+}
+
+@media (max-width:1090px){
+    .content{
+        width: 85%;
+    }
+}
+
+@media (max-width:900px){
+    .content{
+        width: 100%;
+        display: block;
+    }
+    .cin-image {
+        width: 100%;
+        text-align: center;
+    }
+    .cin-image img{
+        width: 70%;
+    }
+    .con-nontent {
+        width: 100%;
+        margin-top: 29px;
+        padding: 20px;
+    }
+    .content .con-nontent h3{
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .content .con-nontent p{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:700px){
+    .cin-image img{
+        width: 80%;
+    }
+    .con-nontent {
+        width: 100%;
+        margin-top: 29px;
+    }
+   
+}
+
+
+
+/* media feedback */
+
+@media (max-width:1093px){
+    .media-back-image > .feddback-con-row {
+        gap: 15px;
+    }
+    .feddback-con-row > .card-img {
+        width: 32%;
+    }
+}
+@media (max-width:940px){
+    .media-back-image > .feddback-con-row {
+        gap: 30px;
+    }
+    .feddback-con-row > .card-img {
+        width: 40%;
+    }
+}
+@media (max-width:850px){
+    .media-back-image > .feddback-con-row {
+        gap: 30px;
+        width:100%
+    }
+    .feddback-con-row > .card-img {
+        width: 40%;
+    }
+}
+@media (max-width:620px){
+    .feddback-con-row > .card-img {
+        width: 70%;
+    }
+}
+@media (max-width:550px){
+    .feddback-con-row > .card-img {
+        width: 90%;
+    }
+}
+
+@media (max-width:1200px){
+    .blog-row {
+        width: 85%;
+    }
+    .blog-card {
+        width: 32%;
+    }
+}
+@media (max-width:1050px){
+
+.advanchar {
+    height: auto;
+    padding-bottom: 10px;
+}
+    .blog-row {
+        width: 95%;
+        justify-content: center;
+        gap:20px;
+    }
+    .blog-card {
+        width: 45%;
+        text-align: center;
+    }
+    .blog-card img {
+        width: 65%;
+    }
+}
+@media (max-width:600px){
+
+    .blog-card {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+   /* ////   footer  section ///// */
+   @media (max-width:750px){
+   .footer-col{
+    width:90%;
+   }
+}
+
+
+
+
