@@ -22,7 +22,7 @@ Honestly, I was tired of not having my own spot on the web. So I sat down, opene
 
 ## 🌐 Live Demo
 
-[🔗 View Website](https://yourusername.github.io/your-repo-name)
+[🔗 View Website]((https://mohit-rathor.onrender.com/))
 
 ## 🙋‍♂️ About Me
 
@@ -33,8 +33,8 @@ I’m a frontend developer who loves building clean UIs, experimenting with layo
 If you wanna connect, feel free to reach out!
 
 - 📧 Email: yourmail@gmail.com  
-- 🔗 LinkedIn: [Your Profile](https://linkedin.com/in/yourlink)  
-- 🧑‍💻 GitHub: [@yourusername](https://github.com/yourusername)
+- 🔗 LinkedIn: [Your Profile](https://linkedin.com/in/mohit-rathor-b78b6b17b/)  
+- 🧑‍💻 GitHub: [@yourusername](https://github.com/mohitrathor1999)
 
 ---
 
