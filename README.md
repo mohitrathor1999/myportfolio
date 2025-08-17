@@ -33,8 +33,8 @@ I’m a frontend developer who loves building clean UIs, experimenting with layo
 If you wanna connect, feel free to reach out!
 
 - 📧 Email: yourmail@gmail.com  
-- 🔗 LinkedIn: [Your Profile](https://linkedin.com/in/mohit-rathor-b78b6b17b/)  
-- 🧑‍💻 GitHub: [@yourusername](https://github.com/mohitrathor1999)
+- 🔗 LinkedIn: [mohit-rathor-b78b6b17b/](https://linkedin.com/in)  
+- 🧑‍💻 GitHub: [@mohitrathor1999](https://github.com)
 
 ---
 
